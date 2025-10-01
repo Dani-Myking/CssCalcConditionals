@@ -15,7 +15,7 @@ Internally uses a combination of calc(), min(), max(), clamp() and round().
   
  Using <code>ValueAboveThreshold('50%', '120px')</code> as width will set the width to 50%, if 50% is more than 120px.\
  Using <code>ValueBelowThresholdToResult('50%', '100px', '25%')</code> as width, will set the width to 25%, if 50% is less than 100px.\
- Using <code>ValueInsideRangeToResult('25%', '100px', '150px', '250px')</code> as width will set the width to 250px, if 25% is between 100px and 150px.\
+ Using <code>ValueInsideRangeToResult('25%', '100px', '150px', '250px')</code> as width will set the width to 250px, if 25% is between 100px and 150px.
 
  The examples above will get a width of 0 if the condition is not met.
 
