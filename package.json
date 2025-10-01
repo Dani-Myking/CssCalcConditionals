@@ -8,8 +8,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "ci": "npm run build"
+    "build": "tsc"
   },
   "keywords": [
     "css",
