@@ -1,6 +1,6 @@
 {
   "name": "css-calc-conditionals",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provides helper functions to emulate if/else/lessThan/moreThan statements inside calc() expressions in CSS.",
   "files": [
     "dist",
@@ -14,6 +14,8 @@
   },
   "keywords": [
     "css",
+    "calc",
+    "conditional",
     "typescript"
   ],
   "repository": {
