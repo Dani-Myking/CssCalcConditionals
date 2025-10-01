@@ -24,7 +24,7 @@ const NegAbs = (value: string): string => {
 
 /**
  * Value above threshold is mapped to the chosen result.
- * Value below threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * * * * * * * * * * * * * * * *
  *          t    v  ->  r
@@ -36,7 +36,7 @@ const NegAbs = (value: string): string => {
  * @param value 
  * @param threshold 
  * @param result 
- * @param strictlyAbove if this is true, only values stricly above the threshold are kept
+ * @param strictlyAbove if this is true, only values strictly above the threshold are kept
  * @returns A CSS calc expression as a string
  */
 export const ValueAboveThresholdToResult = (
@@ -49,7 +49,7 @@ export const ValueAboveThresholdToResult = (
 
 /**
  * Value below threshold is mapped to the chosen result.
- * Value above threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * * * * * * * * * * * * * * * *
  *        r  <- v    t
@@ -61,7 +61,7 @@ export const ValueAboveThresholdToResult = (
  * @param value 
  * @param threshold 
  * @param result 
- * @param striclyBelow if this is true, only values stricly below the threshold are kept
+ * @param striclyBelow if this is true, only values strictly below the threshold are kept
  * @returns A CSS calc expression as a string
  */
 export const ValueBelowThresholdToResult = (
@@ -74,11 +74,11 @@ export const ValueBelowThresholdToResult = (
 
 /**
  * Value above threshold is retained.
- * Value below threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * @param value 
  * @param threshold 
- * @param strictlyAbove if this is true, only values stricly above the threshold are kept
+ * @param strictlyAbove if this is true, only values strictly above the threshold are kept
  * @returns A CSS calc expression as a string
  */
 export const ValueAboveThreshold = (
@@ -90,11 +90,11 @@ export const ValueAboveThreshold = (
 
 /**
  *  Value below threshold is retained.
- *  Value above threshold is set to 0.
+ *  Otherwise, value is set to 0.
  * 
  * @param value 
  * @param threshold 
- * @param strictlyBelow if this is true, only values stricly below the threshold are kept
+ * @param strictlyBelow if this is true, only values strictly below the threshold are kept
  * @returns A CSS calc expression as a string
  */
 export const ValueBelowThreshold = (
@@ -106,7 +106,7 @@ export const ValueBelowThreshold = (
 
 /**
  * Value below threshold is mapped to result 1.
- * Value above threshold is mapped to result 2.
+ * Otherwise, threshold is mapped to result 2.
  * 
  * * * * * * * * * * * * * * * *
  *       r1  <- v      v -> r2
@@ -119,7 +119,7 @@ export const ValueBelowThreshold = (
  * @param threshold 
  * @param result1 
  * @param result2 
- * @param strictlyBelow if this is true, only values stricly below the threshold will transform to result1; result2 otherwise
+ * @param strictlyBelow if this is true, only values strictly below the threshold will transform to result1; result2 otherwise
  * @returns A CSS calc expression as a string
  */
 export const ValueBelowThresholdToResult1ElseResult2 = (
@@ -133,7 +133,7 @@ export const ValueBelowThresholdToResult1ElseResult2 = (
 
 /**
  * Value within threshold is mapped to the chosen result.
- * Value outsite threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * * * * * * * * * * * * * * * *
  *            v ->   r
@@ -164,7 +164,7 @@ export const ValueInsideRangeToResult = (
 
 /**
  * Value outside threshold is mapped to the chosen result.
- * Value within threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * * * * * * * * * * * * * * * * 
  *               r   <-  v  
@@ -195,7 +195,7 @@ export const ValueOutsideRangeToResult = (
 
 /**
  * Value within threshold is retained.
- * Value outsite threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * @param value
  * @param threshold1 
@@ -213,7 +213,7 @@ export const ValueInsideRange = (
 
 /**
  * Value outside threshold is retained.
- * Value within threshold is set to 0.
+ * Otherwise, value is set to 0.
  * 
  * @param value 
  * @param lowerThreshold 
@@ -231,7 +231,7 @@ export const ValueOutsideRange = (
 
 /**
  * Value inside threshold range is mapped to result 1.
- * Value outside threshold range is mapped to result 2.
+ * Otherwise, value is mapped to result 2.
  * 
  * * * * * * * * * * * * * * * * * *
  *       r2 <- v     v -> r1
