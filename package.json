@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "Provides helper functions to emulate if/else/lessThan/moreThan statements inside calc() expressions in CSS.",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "type": "module",
   "main": "dist/index.js",
