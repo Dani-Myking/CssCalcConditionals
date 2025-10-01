@@ -8,15 +8,17 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "local-release": "changeset version && changeset publish"
   },
   "keywords": [
     "css",
     "typescript"
   ],
   "author": "Dani Myking",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "typescript": "^5.9.2"
   }
 }
