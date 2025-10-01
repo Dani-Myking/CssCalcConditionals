@@ -15,6 +15,10 @@
     "css",
     "typescript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dani-Myking/CssCalcConditionals"
+  },
   "author": "Dani Myking",
   "license": "MIT",
   "devDependencies": {
